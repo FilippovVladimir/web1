@@ -1,0 +1,143 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Стили для шапки */
+header {
+    background-color: #3e6cf4;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #2e50a4;
+}
+
+.table-info {
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Стили для основного контента */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили для формы */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+.box {
+    margin-bottom: 15px;
+}
+
+.box p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3e6cf4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3457c4;
+}
+
+/* Стили для графика */
+.right-box {
+    text-align: center;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Стили для таблицы */
+table.result {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.result th {
+    background-color: #3e6cf4;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.result td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.result tbody tr:nth-child(even) {
+    background-color: #f4f7fc;
+}
+
+.result tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-box {
+        width: 100%;
+    }
+}

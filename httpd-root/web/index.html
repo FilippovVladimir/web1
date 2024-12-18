@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Лабараторная работа 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <table class="table-info">
+            <thead>
+                <tr>
+                    <th>Филиппов Владимир Леонидович</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Группа</td>
+                    <td>P3224</td>
+                </tr>
+                <tr>
+                    <td>Вариант</td>
+                    <td>292209</td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+
+    <main>
+        <form class="left-box">
+            <div class="box x">
+                <p><b>Координата X: </b></p>
+                <p><input name="x" type="radio" value="-4">-4</p>
+                <p><input name="x" type="radio" value="-3">-3</p>
+                <p><input name="x" type="radio" value="-2">-2</p>
+                <p><input name="x" type="radio" value="-1">-1</p>
+                <p><input name="x" type="radio" value="0">0</p>
+                <p><input name="x" type="radio" value="1">1</p>
+                <p><input name="x" type="radio" value="2">2</p>
+                <p><input name="x" type="radio" value="3">3</p>
+                <p><input name="x" type="radio" value="4">4</p>
+            </div>
+
+            <div class="box y">
+                <p><b>Координата Y (-3 ... 3): </b></p>
+                <input type="text" name="y" pattern="^-?\d+(\.\d+)?$">
+            </div>
+
+            <div class="box r">
+                <p><b>R: </b></p>
+                <select name="r">
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <button type="submit">Проверить</button>
+        </form>
+         
+     
+        <div class="right-box">
+            <img src="graph.png" width="70%" alt="картинка графика" >
+        </div>
+
+        <table class="result">
+            <thead>
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>R</th>
+                    <th>Результат</th>
+                    <th>Время</th>
+                    <th>Время работы скрипта</th>
+                </tr>
+            </thead>
+            <tbody id="resultBody">
+            </tbody>
+        </table>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
